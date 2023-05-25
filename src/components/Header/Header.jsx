@@ -27,6 +27,7 @@ const Header = () => {
         viewBox="0 0 16 16"
         onClick={() => {
           localStorage.setItem("login", 0);
+          localStorage.setItem("signup", 0);
           navigate("/");
         }}
       >
