@@ -1,6 +1,7 @@
 import "./SignupForm.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Input from "../../../components/Input/Index";
+import { useNavigate } from "react-router-dom";
 
 const SignupForm = () => {
   const [name, setName] = useState();
@@ -8,7 +9,16 @@ const SignupForm = () => {
   const [confirmPassword, setConfirmPassword] = useState();
   const [email, setEmail] = useState();
   const [validation, setValidation] = useState({});
+  const [signup] = useState(() => {
+    return localStorage.getItem("signup");
+  });
 
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (signup === "1") {
+      navigate("/finances");
+    }
+  }, [signup, navigate]);
   const handleOnChangeName = (event) => setName(event.target.value);
   const handleOnChangePassword = (event) => setPassword(event.target.value);
   const handleChangeConfirmPassword = (event) =>
@@ -33,6 +43,8 @@ const SignupForm = () => {
       confirmPassword,
       email,
     };
+    localStorage.setItem("signup", 1);
+    navigate("/finances");
     console.log(data);
   };
   return (

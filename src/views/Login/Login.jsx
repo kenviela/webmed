@@ -1,6 +1,7 @@
 import Title from "../../components/Title/Title";
 import LoginForm from "./LoginForm/LoginForm";
 import "./Login.scss";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="Login">
@@ -11,7 +12,7 @@ const Login = () => {
         <LoginForm />
       </div>
       <div className="Login__signup">
-        <a href="../Signup">no tienes cuenta? registrate aquí</a>
+        <Link href="../Signup">no tienes cuenta? registrate aquí</Link>
       </div>
     </div>
   );
