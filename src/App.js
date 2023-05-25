@@ -24,7 +24,6 @@ function App() {
         <Route path="/medicine" element={<Medicine />} />
         <Route path="/pay" element={<Pay />} />
         <Route path="/comments" element={<Comments />} />
-        <Route path="*" element={<Home />} />
       </Routes>
     </div>
   );
