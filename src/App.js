@@ -1,7 +1,6 @@
 import "./App.scss";
 import Home from "./views/Home/Home";
 import Login from "./views/Login/Login.jsx";
-import SignupForm from "./views/Signup/SignupForm/SignupForm";
 import Signup from "./views/Signup/Singup";
 import Finances from "./views/Finances/Finances";
 import News from "./views/News/News";

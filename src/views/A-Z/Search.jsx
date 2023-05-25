@@ -3,7 +3,6 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import Title from "../../components/Title/Title";
 import Header from "../../components/Header/Header";
 import "./Search.scss";
-import { json } from "react-router-dom";
 
 const enfermedades = [
   {

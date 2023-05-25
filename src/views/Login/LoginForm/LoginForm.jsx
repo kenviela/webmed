@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Input from "../../../components/Input/Index";
 import "./LoginForm.scss";
+import { useNavigate } from "react-router-dom";
 const LoginForm = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const [login] = useState(() => {
+    return localStorage.getItem("login");
+  });
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (login === "1") {
+      navigate("/finances");
+    }
+  }, [login, navigate]);
 
   const handleOnChangeEmail = (event) => {
     const email = event.target.value;
@@ -21,6 +32,8 @@ const LoginForm = () => {
       email,
       password,
     };
+    localStorage.setItem("login", 1);
+    navigate("/finances");
     console.log(data);
   };
   return (
