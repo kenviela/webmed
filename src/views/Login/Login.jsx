@@ -12,7 +12,7 @@ const Login = () => {
         <LoginForm />
       </div>
       <div className="Login__signup">
-        <Link href="../Signup">no tienes cuenta? registrate aquí</Link>
+        <Link to="/Signup">no tienes cuenta? registrate aquí</Link>
       </div>
     </div>
   );
