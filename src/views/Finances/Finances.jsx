@@ -1,6 +1,7 @@
 import Title from "../../components/Title/Title";
 import Header from "../../components/Header/Header";
 import "./Finances.scss";
+import { Link } from "react-router-dom";
 const Finances = () => {
   return (
     <div className="Finances">
@@ -23,7 +24,7 @@ const Finances = () => {
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
             <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
           </svg>
-          <a href="/pay">comprar seguro</a>
+          <Link to="/pay">comprar seguro</Link>
           <p> compra los seguros</p>
         </div>
         <div className="Finances__option__services">
@@ -39,7 +40,7 @@ const Finances = () => {
             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
             <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
           </svg>
-          <a href="/pay">pagar servicios</a>
+          <Link to="/pay">pagar servicios</Link>
           <p>paga los servicios</p>
         </div>
       </div>

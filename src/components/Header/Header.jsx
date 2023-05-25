@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.scss";
 const Header = () => {
   const navigate = useNavigate();
@@ -8,14 +8,14 @@ const Header = () => {
         <h1>Webmed</h1>
       </div>
       <div className="Header__menu">
-        <a href="/dashboard">incio</a>
-        <a href="/finances">finanzas</a>
-        <a href="/disease">A-Z</a>
-        <a href="/resource">recursos</a>
-        <a href="/medicine">Medicamentos y suplementos</a>
-        <a href="/pay">Pagos</a>
-        <a href="/news">Noticias y expertos</a>
-        <a href="/comments">comentarios</a>
+        <Link to="/dashboard">incio</Link>
+        <Link to="/finances">finanzas</Link>
+        <Link to="/disease">A-Z</Link>
+        <Link to="/resource">recursos</Link>
+        <Link to="/medicine">Medicamentos y suplementos</Link>
+        <Link to="/pay">Pagos</Link>
+        <Link to="/news">Noticias y expertos</Link>
+        <Link to="/comments">comentarios</Link>
       </div>
       <svg
         className="Header__user"
