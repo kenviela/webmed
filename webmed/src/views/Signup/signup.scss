@@ -1,0 +1,14 @@
+$lightBlue:#2db2d3;
+.Signup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid $lightBlue;
+  margin:5rem;
+
+  border-radius: 10px;
+  &__form{
+    margin-top:32px;
+  }
+}

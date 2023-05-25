@@ -1,0 +1,27 @@
+$lightBlue:#2db2d3;
+.Header{
+  display: flex;
+  background:linear-gradient(90deg,#00ccf0,#6471e9);
+  width: 100%;
+	color: white;
+	height: 80px;
+&__menu{
+  margin-top:2rem;
+  margin-left:10rem;
+}
+  &__title{
+    margin-left: 3rem;
+  }
+  & a{
+    color: white;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-decoration: none;
+  }
+  & svg{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+}

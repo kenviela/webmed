@@ -1,0 +1,35 @@
+@use "../../index.scss";
+$lightBlue:#2db2d3;
+.Finances{
+  @extend .view;
+  &__option{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3rem;
+    & svg{
+      width: 7rem;
+      height: 7rem;
+      font-size: 20px;
+    }
+    & a{
+      outline: none;
+      text-decoration: none;
+      color:$lightBlue;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    &__finances{
+      margin-left: 5rem;
+      display: flex;
+      margin-right: 5rem;
+      flex-direction: column;
+    }
+    &__services{
+      margin-right: 5rem;
+      display: flex;
+      margin-left: 5rem;
+      flex-direction: column;
+    }
+  }
+}

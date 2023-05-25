@@ -1,0 +1,30 @@
+@use "../../index.scss";
+$lightBlue:#2db2d3;
+
+.Resource{
+  @extend .view;
+  &__options{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 5rem;
+    justify-items: center;
+    margin-top: 3rem;
+    &__item{
+      display: flex;
+      flex-direction: column;
+    }
+    & svg{
+      width: 7rem;
+      height: 7rem;
+      font-size: 20px;
+      margin-bottom: 2rem;
+    }
+    & a{
+      outline: none;
+      text-decoration: none;
+      color:$lightBlue;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+}

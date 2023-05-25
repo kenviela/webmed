@@ -1,0 +1,62 @@
+@use "../../index.scss";
+$lightBlue:#2db2d3;
+$lightGray:#e7e3e3da;
+.News{
+  @extend .view;
+  & img{
+    width: 15rem;
+    height: 15rem;
+  }
+  &__container{
+    &__news1{
+      display: flex;
+      padding: 20px;
+      background-color: $lightGray;
+      &:hover{
+        box-shadow: 10px 10px rgb(9, 26, 31,.3);
+      }
+      & a{
+        outline: none;
+        text-decoration: none;
+        color: #161414;
+      }
+      & img{
+        margin-right: 2rem;
+      }
+    }
+    &__news2{
+      display: flex;
+      padding: 20px;
+      margin-top: 3rem;
+      background-color: $lightGray;
+      &:hover{
+        box-shadow: 10px 10px rgb(9, 26, 31,.3);
+      }
+      & a{
+        outline: none;
+        text-decoration: none;
+        color: #161414;
+      }
+      & img{
+        margin-right: 2rem;
+      }
+    }
+    &__news3{
+      display: flex;
+      padding: 20px;
+      margin-top: 3rem;
+      background-color: $lightGray;
+      &:hover{
+        box-shadow: 10px 10px rgb(9, 26, 31,.3);
+      }
+      & a{
+        outline: none;
+        text-decoration: none;
+        color: #161414;
+      }
+      & img{
+        margin-right: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use "../../index.scss";
+
+.Home{
+  @extend .view;
+  &__buttons{
+    @extend .view;
+    & button{
+      @extend .buttons;
+      margin-top: 15px;
+    }
+  }
+}
